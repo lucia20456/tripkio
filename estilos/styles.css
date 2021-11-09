@@ -1,0 +1,665 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  color: #141414 !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+}
+
+/*header movil responsive*/
+.header {
+  background-color: #FAC712;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo iconos" "menu menu";
+  -ms-grid-rows: 60% 40%;
+      grid-template-rows: 60% 40%;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  height: auto;
+  /*header tablet responsive*/
+  /*header laptop responsive*/
+}
+
+.header__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  margin: 0.2rem 1rem;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 3rem;
+}
+
+.header__logo-titulo {
+  font-size: 45px;
+  margin: 0;
+  height: 2.5rem;
+  font-weight: 200;
+}
+
+.header__logo-subtitulo {
+  font-size: 14px;
+  padding-left: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.header__iconos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: iconos;
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__iconos-items2 {
+  margin: 0 0.3rem;
+}
+
+.header__iconos-items1 {
+  margin: 0 0.7rem;
+}
+
+.header__menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: menu;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Ubuntu condensed', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+.header .iconify {
+  width: 18px;
+  height: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "menu logo iconos";
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+    -ms-grid-columns: 40% 20% 40%;
+        grid-template-columns: 40% 20% 40%;
+    justify-items: center;
+  }
+  .header__logo {
+    margin: 1rem;
+  }
+  .header__logo-titulo {
+    font-size: 40px;
+    height: 2.4rem;
+  }
+  .header__logo-subtitulo {
+    font-size: 15px;
+    padding-left: 2.5rem;
+  }
+  .header__menu-items {
+    font-size: 15px;
+    padding: 0.4rem;
+    margin-bottom: -1rem;
+  }
+  .header__iconos {
+    margin: 2rem;
+  }
+  .header__iconos-items1 {
+    margin: 0 1.5rem;
+  }
+  .header__iconos-items2 {
+    margin: 0 0.5rem;
+  }
+  .header .iconify {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header__logo-titulo {
+    font-size: 50px;
+    height: 3rem;
+  }
+  .header__logo-subtitulo {
+    font-size: 16px;
+    padding-left: 3rem;
+  }
+  .header__menu {
+    margin: 0;
+  }
+  .header__menu-items {
+    font-size: 18px;
+    padding: 0 1.3rem;
+  }
+  .header__iconos {
+    margin-left: 10rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .iconify {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/*imagen del header index responsive*/
+.coliseo {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .coliseo {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .coliseo {
+    height: 500px;
+  }
+}
+
+/*imagen del header otras páginas responsive*/
+.bannerPaginas {
+  height: 10rem;
+  background: url(../imagenes/romaed.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #292929;
+  margin-bottom: 4rem;
+}
+
+.bannerPaginas__titulo {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 768px) {
+  .bannerPaginas {
+    min-height: 15rem;
+  }
+  .bannerPaginas__titulo {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .bannerPaginas {
+    min-height: 20rem;
+    margin-bottom: 8rem;
+  }
+  .bannerPaginas__titulo {
+    font-size: 70px;
+  }
+}
+
+.footer {
+  background-color: #FAC712;
+  margin-top: 4rem;
+}
+
+.footer__logo {
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+.footer__logo-titulo {
+  font-size: 45px;
+  margin: 0;
+  height: 3rem;
+  font-weight: 200;
+}
+
+.footer__logo-subtitulo {
+  font-size: 14px;
+  padding-left: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.footer__menu {
+  font-family: 'Ubuntu condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__menu-items {
+  padding: 0 0.5rem;
+}
+
+.footer__ayuda {
+  font-family: 'Ubuntu condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer .iconify {
+  padding-bottom: 0.12rem;
+  width: 23px;
+  height: 23px;
+}
+
+.footer__rrss-titulo {
+  font-family: 'Ubuntu condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer__rrss-iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1rem 3rem;
+}
+
+.footer__mediosDePago-titulo {
+  font-family: 'Ubuntu condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer__mediosDePago-iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.footer__mediosDePago-vector {
+  width: 30px;
+}
+
+.footer #rapiPago {
+  width: 70px;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: -1rem;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo rrss pagos" "menu rrss pagos" "copyright copyright copyright";
+    -ms-grid-columns: 45% 18%;
+        grid-template-columns: 45% 18%;
+    -ms-grid-rows: 50% 40% 10%;
+        grid-template-rows: 50% 40% 10%;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    margin: 0 0 1rem 0;
+  }
+  .footer__nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: menu;
+  }
+  .footer__menu {
+    margin: 0 2rem;
+    font-size: 12px;
+  }
+  .footer__menu-items {
+    padding: 0 0.5rem;
+  }
+  .footer__ayuda {
+    font-size: 12px;
+  }
+  .footer__copyright {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: copyright;
+  }
+  .footer__rrss {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: rrss;
+    margin-top: 2.8rem;
+  }
+  .footer__rrss-iconos {
+    margin: 0.8rem 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__mediosDePago {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: pagos;
+    margin: 2.6rem 0 0 3rem;
+  }
+  .footer__mediosDePago-iconos {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 1rem 0 0;
+  }
+  .footer__mediosDePago-vector {
+    width: 20px;
+  }
+  .footer__copyright {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    margin-top: 8rem;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo rrss pagos" "menu rrss pagos" "copyright copyright copyright";
+    -ms-grid-columns: 35% 18%;
+        grid-template-columns: 35% 18%;
+    -ms-grid-rows: 50% 40% 10%;
+        grid-template-rows: 50% 40% 10%;
+    grid-column-gap: 8rem;
+  }
+  .footer__menu {
+    font-size: 15px;
+  }
+  .footer__ayuda {
+    font-size: 15px;
+  }
+  .footer__mediosDePago {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: pagos;
+    margin: 2.6rem 0 0 0;
+  }
+  .footer__mediosDePago-vector {
+    width: 30px;
+  }
+}
+
+/*TOP ATRACCIONES, TOP ACTIVIDADES Y VER MAS*/
+.container {
+  /*CARDS*/
+  /*cards-atracciones*/
+  /*cards-actividades*/
+}
+
+.container__titulo {
+  text-align: center;
+  margin: 8rem 0 4rem 0;
+  font-size: 26px;
+}
+
+.container__verMas {
+  text-align: right;
+  margin: 2rem 1rem 0 0;
+  font-size: 18px;
+}
+
+.container .card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.container__card-titulo-atracciones {
+  margin: 0.5rem 0 1rem 0;
+  font-weight: 600;
+}
+
+.container__card-texto-atracciones {
+  color: #343434 !important;
+  font-size: 16px;
+}
+
+.container__card-titulo-actividades {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.container__card-texto-actividades {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: 'Dosis', sans-serif !important;
+  margin-bottom: 16px;
+}
+
+.container__card-descripcion-actividades {
+  margin: 1rem;
+}
+
+.container__boton {
+  text-align: center;
+  margin: 0 -16px -16px -16px;
+}
+
+.container__boton-button {
+  background: #141414;
+  border: 2px solid black;
+  font-size: 11px;
+  padding: 5px 0;
+  width: 100%;
+  color: #e4e4e4 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .container__card-titulo-actividades {
+    font-size: 15px;
+    margin: 0;
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    /*TOP ATRACCIONES, TOP ACTIVIDADES Y VER MAS (responsive DESKTOP)*/
+    /*CARDS (responsive DESKTOP)*/
+    /*cards-atracciones (responsive DESKTOP)*/
+    /*cards-actividades (responsive DESKTOP)*/
+  }
+  .container__titulo {
+    font-size: 40px;
+    padding: 0 5rem 5rem 5rem;
+  }
+  .container__verMas {
+    margin-right: 5rem;
+    font-size: 25px;
+  }
+  .container__card {
+    margin: 2rem;
+  }
+  .container__card-texto-atracciones {
+    line-height: 27.49px;
+  }
+  .container__card-titulo-actividades {
+    font-size: 16px;
+    height: 2rem;
+  }
+}
+
+/*FORMULARIO*/
+.container__tituloForm {
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.container__datos {
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #141414;
+  margin-bottom: 16px;
+  padding: 4px;
+}
+
+.container__mensaje {
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #141414;
+  padding: 4px;
+}
+
+.container__botonForm {
+  background-color: #141414;
+  color: white !important;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #141414;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container__tituloForm {
+    font-size: 24px;
+  }
+}
+
+.secciones {
+  margin: 2rem;
+}
+
+.secciones__titulo {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.secciones__subtitulo {
+  font-weight: 400;
+}
+
+/*ICONOS DE INFORMACIÓN*/
+.informacion {
+  margin-top: 8rem;
+}
+
+.informacion__titulo {
+  text-align: center;
+  font-size: 26px;
+  margin: 8rem 1rem 4rem 1rem;
+  font-weight: 400;
+}
+
+.informacion__iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.informacion__iconosP {
+  margin: 1rem 0;
+  text-align: center;
+  width: 6rem;
+}
+
+.informacion__iconosP-iconosS {
+  width: 30px;
+  height: 30px;
+}
+
+.informacion__iconosP-titulo {
+  font-size: 16px;
+  font-family: 'Ubuntu condensed', sans-serif;
+  padding-top: 0.5rem;
+  cursor: pointer;
+  cursor: hand;
+}
+
+@media only screen and (min-width: 768px) {
+  .informacion__titulo {
+    font-size: 30px;
+  }
+  .informacion__iconosP {
+    margin: 3rem;
+    width: 8rem;
+  }
+  .informacion__iconosP-iconosS {
+    width: 60px;
+    height: 60px;
+  }
+  .informacion__iconosP-titulo {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .informacion__titulo {
+    font-size: 40px;
+  }
+  .informacion__iconosP-iconosS {
+    width: 80px;
+    height: 80px;
+  }
+  .informacion__iconosP-titulo {
+    font-size: 26px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

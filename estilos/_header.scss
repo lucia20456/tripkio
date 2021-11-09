@@ -1,0 +1,197 @@
+@import"responsive";
+
+/*header movil responsive*/
+
+.header {
+    background-color: #FAC712;
+    display: grid;
+    grid-template-areas:
+        "logo iconos"
+        "menu menu";
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 40% 60%;
+    height: auto;
+
+    &__logo {
+        grid-area: logo;
+        margin: 0.2rem 1rem;
+        font-family: 'Dosis', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    &__logo-titulo {
+        font-size: 45px;
+        margin: 0;
+        height: 2.5rem;
+        font-weight: 200;
+    }
+
+    &__logo-subtitulo {
+        font-size: 14px;
+        padding-left: 2.8rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+    }
+
+    &__iconos {
+        grid-area: iconos;
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    &__iconos-items2 {
+        margin: 0 0.3rem;
+    }
+
+    &__iconos-items1 {
+        margin: 0 0.7rem;
+    }
+
+    &__menu {
+        grid-area: menu;
+        display: flex;
+        font-family: 'Ubuntu condensed', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .iconify{
+        width: 18px;
+        height: 18px;
+    }
+
+    /*header tablet responsive*/
+
+    @include tablet {
+        display: grid;
+        grid-template-areas:
+            "menu logo iconos";
+        grid-template-rows: 100%;
+        grid-template-columns: 40% 20% 40%;
+        justify-items: center;
+
+        &__logo {
+            margin: 1rem;
+        }
+
+        &__logo-titulo {
+            font-size: 40px;
+            height: 2.4rem;
+        }
+
+        &__logo-subtitulo {
+            font-size: 15px;
+            padding-left: 2.5rem;
+        }
+
+        &__menu-items {
+            font-size: 15px;
+            padding: 0.4rem;
+            margin-bottom: -1rem;
+        }
+
+        &__iconos {
+            margin: 2rem;
+        }
+
+        &__iconos-items1 {
+            margin: 0 1.5rem;
+        }
+
+        &__iconos-items2 {
+            margin: 0 0.5rem;
+        }
+
+        .iconify{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    /*header laptop responsive*/
+
+    @include desktop {
+        &__logo-titulo {
+            font-size: 50px;
+            height: 3rem;
+        }
+
+        &__logo-subtitulo {
+            font-size: 16px;
+            padding-left: 3rem;
+        }
+
+        &__menu {
+            margin:0;
+        }
+
+        &__menu-items {
+            font-size: 18px;
+            padding: 0 1.3rem;
+        }
+
+        &__iconos {
+            margin-left: 10rem;
+            align-items:center;
+        }
+
+        .iconify{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+/*imagen del header index responsive*/
+
+.coliseo {
+    height: 100%;
+    width: 100%;
+
+    @include tablet {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    @include desktop {
+        height: 500px;
+    }
+}
+
+/*imagen del header otras páginas responsive*/
+.bannerPaginas {
+    height: 10rem;
+    background: url(../imagenes/romaed.jpg) center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #292929;
+    margin-bottom: 4rem;
+
+    &__titulo {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    @include tablet {
+        min-height: 15rem;
+
+        &__titulo {
+            font-size: 40px;
+        }
+    }
+
+    @include desktop {
+        min-height: 20rem;
+        margin-bottom: 8rem;
+
+        &__titulo {
+            font-size: 70px;
+        }
+    }
+}
