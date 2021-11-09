@@ -479,7 +479,7 @@ body {
   font-size: 16px;
 }
 
-.container__imagen {
+.container__card-imagen {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
@@ -669,6 +669,43 @@ body {
   }
   .informacion__iconosP-titulo {
     font-size: 26px;
+  }
+}
+
+.error404 {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.error404__titulo {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.error404__parrafo {
+  font-size: 18px;
+}
+
+.error404__boton {
+  font-size: 12px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #141414;
+  color: white !important;
+  border: 2px solid black;
+}
+
+@media only screen and (min-width: 1024px) {
+  .error404__titulo {
+    font-size: 200px;
+  }
+  .error404__parrafo {
+    font-size: 35px;
+    margin: 3rem 0;
+  }
+  .error404__boton {
+    font-size: 20px;
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

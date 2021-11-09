@@ -3,11 +3,12 @@
 /*FORMULARIO*/
 
 .container {
-    &__tituloForm{
+    &__tituloForm {
         font-size: 16px;
         margin-bottom: 2rem;
     }
-    &__datos{
+
+    &__datos {
         font-size: 16px;
         width: 100%;
         border: 2px solid #141414;
@@ -15,23 +16,23 @@
         padding: 4px;
     }
 
-    &__mensaje{
+    &__mensaje {
         font-size: 16px;
         width: 100%;
         border: 2px solid #141414;
         padding: 4px;
     }
 
-    &__botonForm{
+    &__botonForm {
         background-color: #141414;
         color: white !important;
         font-size: 16px;
-        width:100%;
+        width: 100%;
         border: 2px solid #141414;
     }
 
-    @include desktop{
-        &__tituloForm{
+    @include desktop {
+        &__tituloForm {
             font-size: 24px;
         }
     }

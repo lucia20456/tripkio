@@ -1,0 +1,41 @@
+@import "responsive";
+
+.error404 {
+    padding: 5rem 2rem;
+    text-align: center;
+
+    &__titulo {
+        font-weight: bold;
+        font-size: 100px;
+    }
+
+    &__parrafo {
+        font-size: 18px;
+    }
+
+    &__boton {
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #141414;
+        color: white !important;
+        border: 2px solid black;
+    }
+
+    @include desktop {
+
+        &__titulo {
+            font-size: 200px;
+        }
+
+        &__parrafo {
+            font-size: 35px;
+            margin: 3rem 0,
+        }
+
+        &__boton {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+    }
+}
