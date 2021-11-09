@@ -477,6 +477,12 @@ body {
   font-size: 16px;
 }
 
+.container__imagen {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container__card-titulo-actividades {
   text-align: center;
   font-size: 18px;
