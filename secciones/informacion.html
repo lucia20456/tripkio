@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +23,22 @@
     <header>
         <!--menu-->
         <div class="header">
-            <nav class="header__menu">
+            <nav class="header__menu" data-aos="zoom-in">
                 <li class="header__menu-items"><a href="actividades.html">ACTIVIDADES</a></li>
                 <li class="header__menu-items"><a href="quever.html">QUE VER</a></li>
                 <li class="header__menu-items"><a href="informacion.html">INFORMACIÓN ÚTIL</a></li>
             </nav>
 
             <!--logo-->
-            <div class="header__logo">
+            <div class="header__logo" data-aos="zoom-in">
                 <a href="../index.html">
                     <h1 class="header__logo-titulo">tripkio </h1>
                     <span class="header__logo-subtitulo">ROMA</span>
                 </a>
             </div>
 
-            <!--iconos-->
-            <div class="header__iconos">
+            <!--iconos/navbar-->
+            <div class="header__iconos" data-aos="zoom-in">
                 <a class="header__iconos-items1" href="#"><span class="iconify"
                         data-icon="clarity:search-line"></span></a>
                 <a class="header__iconos-items2" href="#"><span class="iconify"
@@ -50,7 +51,10 @@
         </div>
 
         <!--imagen/header-->
-        <section class="bannerPaginas">
+        <section class="bannerPaginas" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
             <h2 class="bannerPaginas__titulo">INFORMACIÓN</h2>
         </section>
     </header>
@@ -59,21 +63,21 @@
         <section>
             <div class="informacion">
                 <div class="informacion__iconos">
-                    <div class="informacion__iconosP">
+                    <div class="informacion__iconosP" data-aos="flip-right">
                         <a href="#CLIMA"><span class="iconify informacion__iconosP-iconosS"
                                 data-icon="fluent:weather-partly-cloudy-day-48-regular"></span></a>
                         <a href="#CLIMA">
                             <h6 class="informacion__iconosP-titulo">CLIMA</h6>
                         </a>
                     </div>
-                    <div class="informacion__iconosP">
+                    <div class="informacion__iconosP" data-aos="flip-right">
                         <a href="#COMER"><span class="iconify informacion__iconosP-iconosS"
                                 data-icon="fluent:food-20-regular"></span></a>
                         <a href="#COMER">
                             <h6 class="informacion__iconosP-titulo">COMER</h6>
                         </a>
                     </div>
-                    <div class="informacion__iconosP">
+                    <div class="informacion__iconosP" data-aos="flip-right">
                         <a href="#DORMIR"><span class="iconify informacion__iconosP-iconosS"
                                 data-icon="fluent:bed-24-regular"></span></a>
                         <a href="#DORMIR">
@@ -82,21 +86,21 @@
                     </div>
                 </div>
                 <div class="informacion__iconos">
-                    <div class="informacion__iconosP">
+                    <div class="informacion__iconosP" data-aos="flip-right">
                         <a href="#TRANSPORTE"><span class="iconify informacion__iconosP-iconosS"
                                 data-icon="carbon:bus"></span></a>
                         <a href="#TRANSPORTE">
                             <h6 class="informacion__iconosP-titulo">TRANSPORTE</h6>
                         </a>
                     </div>
-                    <div class="informacion__iconosP">
+                    <div class="informacion__iconosP" data-aos="flip-right">
                         <a href="#PRECIOS"><span class="iconify informacion__iconosP-iconosS"
                                 data-icon="clarity:dollar-bill-line"></span></a>
                         <a href="#PRECIOS">
                             <h6 class="informacion__iconosP-titulo">PRECIOS</h6>
                         </a>
                     </div>
-                    <div class="informacion__iconosP">
+                    <div class="informacion__iconosP" data-aos="flip-right">
                         <a href="#COMPRAS"><span class="iconify informacion__iconosP-iconosS"
                                 data-icon="clarity:store-line"></span></a>
                         <a href="#COMPRAS">
@@ -106,8 +110,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="secciones">
+        <section data-aos="zoom-in">
+            <div class="secciones" >
                 <a name="CLIMA"></a>
                 <h3 class="secciones__titulo">CLIMA</h3>
                 <h4 class="secciones_subtitulo">Roma en invierno</h4>
@@ -171,7 +175,7 @@
         <div class="footer">
 
             <!--logo-->
-            <div class="footer__logo">
+            <div class="footer__logo" data-aos="zoom-in">
                 <a href="../index.html">
                     <p class="footer__logo-titulo">tripkio</p>
                     <span class="footer__logo-subtitulo">ROMA</span>
@@ -179,7 +183,10 @@
             </div>
 
             <!--menu-->
-            <div class="footer__nav">
+            <div class="footer__nav" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
                 <nav class="footer__menu">
                     <li class="footer__menu-items"><a href="actividades.html">ACTIVIDADES</a></li>
                     <li class="footer__menu-items"><a href="quever.html">QUE VER</a></li>
@@ -193,7 +200,7 @@
             </div>
 
             <!--seguinos-->
-            <div class="footer__rrss">
+            <div class="footer__rrss" data-aos="zoom-in">
                 <h4 class="footer__rrss-titulo">SEGUINOS</h4>
                 <div class="footer__rrss-iconos">
                     <a href="#"><span class="iconify" data-icon="simple-icons:facebook"></span></a>
@@ -204,7 +211,7 @@
             </div>
 
             <!--medios de pago-->
-            <div class="footer__mediosDePago">
+            <div class="footer__mediosDePago" data-aos="zoom-in">
                 <h4 class="footer__mediosDePago-titulo">MEDIOS DE PAGO</h4>
                 <div class="footer__mediosDePago-iconos">
                     <img class="footer__mediosDePago-vector" src="../imagenes/mercadopago.svg" alt="rapipago">
@@ -217,10 +224,16 @@
                 </div>
             </div>
 
-            <p class="footer__copyright">Copyright © 2021 Tripkio. Todos los derechos reservados</p>
+            <p class="footer__copyright" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">Copyright © 2021 Tripkio. Todos los derechos reservados</p>
         </div>
     </footer>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
 </body>
 

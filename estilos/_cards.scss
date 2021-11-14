@@ -11,9 +11,13 @@
     }
 
     &__verMas {
-        text-align: right;
-        margin: 2rem 1rem 0 0;
-        font-size: 18px;
+        display: flex;
+        justify-content: end;
+        margin-top: 1rem;
+    }
+
+    &__verMas:hover {
+        font-weight: 600;
     }
 
     /*CARDS*/
@@ -46,8 +50,6 @@
     /*cards-actividades*/
 
     &__card-titulo-actividades {
-        text-align: center;
-        font-size: 18px;
         font-weight: 600;
         margin: 1rem;
     }
@@ -71,11 +73,15 @@
 
     &__boton-button {
         background: #141414;
-        border: 2px solid black;
+        border: 0px;
         font-size: 11px;
         padding: 5px 0;
         width: 100%;
         color: #e4e4e4 !important;
+    }
+
+    &__boton-button:hover{
+        background-color: #3e3e3e;
     }
 
     @include tablet {
@@ -104,12 +110,6 @@
 
         &__card {
             margin: 2rem;
-        }
-
-        /*cards-atracciones (responsive DESKTOP)*/
-
-        &__card-texto-atracciones {
-            line-height: 27.49px;
         }
 
         /*cards-actividades (responsive DESKTOP)*/

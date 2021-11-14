@@ -17,18 +17,21 @@
     }
 
     &__mensaje {
-        font-size: 16px;
-        width: 100%;
-        border: 2px solid #141414;
-        padding: 4px;
+        @extend .container__datos;
+        margin: 0;
     }
 
     &__botonForm {
+        @extend .container__datos;
         background-color: #141414;
         color: white !important;
-        font-size: 16px;
-        width: 100%;
-        border: 2px solid #141414;
+        margin: 0;
+        padding: 2px;
+        border: 0px;
+    }
+
+    &__botonForm:hover {
+        background-color: #3e3e3e;
     }
 
     @include desktop {

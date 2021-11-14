@@ -14,6 +14,8 @@
     grid-template-columns: 40% 60%;
     height: auto;
 
+    /*LOGO*/
+
     &__logo {
         grid-area: logo;
         margin: 0.2rem 1rem;
@@ -26,6 +28,8 @@
         margin: 0;
         height: 2.5rem;
         font-weight: 200;
+        cursor: hand;
+        cursor: pointer;
     }
 
     &__logo-subtitulo {
@@ -33,7 +37,11 @@
         padding-left: 2.8rem;
         font-weight: 700;
         letter-spacing: 0.2em;
+        cursor: hand;
+        cursor: pointer;
     }
+
+    /*ICONOS*/
 
     &__iconos {
         grid-area: iconos;
@@ -50,6 +58,8 @@
     &__iconos-items1 {
         margin: 0 0.7rem;
     }
+
+    /*MENU*/
 
     &__menu {
         grid-area: menu;
@@ -137,6 +147,10 @@
             padding: 0 1.3rem;
         }
 
+        &__menu-items:hover {
+            font-size: 19px;
+        }
+
         &__iconos {
             margin-left: 10rem;
             align-items: center;
@@ -145,6 +159,11 @@
         .iconify {
             width: 25px;
             height: 25px;
+        }
+
+        .iconify:hover {
+            width: 29px;
+            height: 29px;
         }
     }
 }

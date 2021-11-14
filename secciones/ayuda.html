@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,22 +21,22 @@
     <header>
         <!--menu-->
         <div class="header">
-            <nav class="header__menu">
+            <nav class="header__menu" data-aos="zoom-in">
                 <li class="header__menu-items"><a href="actividades.html">ACTIVIDADES</a></li>
                 <li class="header__menu-items"><a href="quever.html">QUE VER</a></li>
                 <li class="header__menu-items"><a href="informacion.html">INFORMACIÓN ÚTIL</a></li>
             </nav>
 
             <!--logo-->
-            <div class="header__logo">
+            <div class="header__logo" data-aos="zoom-in">
                 <a href="../index.html">
                     <h1 class="header__logo-titulo">tripkio </h1>
                     <span class="header__logo-subtitulo">ROMA</span>
                 </a>
             </div>
 
-            <!--iconos-->
-            <div class="header__iconos">
+            <!--iconos/navbar-->
+            <div class="header__iconos" data-aos="zoom-in">
                 <a class="header__iconos-items1" href="#"><span class="iconify"
                         data-icon="clarity:search-line"></span></a>
                 <a class="header__iconos-items2" href="#"><span class="iconify"
@@ -48,17 +49,21 @@
         </div>
 
         <!--imagen/header-->
-        <section class="bannerPaginas">
+        <section class="bannerPaginas" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
             <h2 class="bannerPaginas__titulo">AYUDA</h2>
         </section>
     </header>
 
     <main>
         <!--FORMULARIO DE CONTACTO-->
-        <section class="container">
+        <section class="container" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <p class="container__tituloForm">¿Necesitas ayuda? Podés contactarte con nosotros para recibir asistencia.
                 Solo necesitas completar el formulario y te responderemos rápidamente.</p>
-            <form action="" method="get">
+            <form action=" method="get>
                 <input type="text" name="nombre" id="nombre" class="container__datos" placeholder=Nombre required>
                 <input type="email" name="email" id="email" class="container__datos" placeholder=Email required>
                 <input type="tel" name="aunto" id="asunto" class="container__datos" placeholder=Asunto required>
@@ -74,7 +79,7 @@
         <div class="footer">
 
             <!--logo-->
-            <div class="footer__logo">
+            <div class="footer__logo" data-aos="zoom-in">
                 <a href="../index.html">
                     <p class="footer__logo-titulo">tripkio</p>
                     <span class="footer__logo-subtitulo">ROMA</span>
@@ -82,7 +87,10 @@
             </div>
 
             <!--menu-->
-            <div class="footer__nav">
+            <div class="footer__nav" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
                 <nav class="footer__menu">
                     <li class="footer__menu-items"><a href="actividades.html">ACTIVIDADES</a></li>
                     <li class="footer__menu-items"><a href="quever.html">QUE VER</a></li>
@@ -96,7 +104,7 @@
             </div>
 
             <!--seguinos-->
-            <div class="footer__rrss">
+            <div class="footer__rrss" data-aos="zoom-in">
                 <h4 class="footer__rrss-titulo">SEGUINOS</h4>
                 <div class="footer__rrss-iconos">
                     <a href="#"><span class="iconify" data-icon="simple-icons:facebook"></span></a>
@@ -107,7 +115,7 @@
             </div>
 
             <!--medios de pago-->
-            <div class="footer__mediosDePago">
+            <div class="footer__mediosDePago" data-aos="zoom-in">
                 <h4 class="footer__mediosDePago-titulo">MEDIOS DE PAGO</h4>
                 <div class="footer__mediosDePago-iconos">
                     <img class="footer__mediosDePago-vector" src="../imagenes/mercadopago.svg" alt="rapipago">
@@ -124,6 +132,10 @@
         </div>
     </footer>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 

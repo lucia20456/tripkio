@@ -4,6 +4,8 @@
     background-color: #FAC712;
     margin-top: 4rem;
 
+    /*LOGO*/
+
     &__logo {
         padding: 2rem 0 1rem 0;
         text-align: center;
@@ -15,6 +17,8 @@
         margin: 0;
         height: 3rem;
         font-weight: 200;
+        cursor: hand;
+        cursor: pointer;
     }
 
     &__logo-subtitulo {
@@ -22,7 +26,11 @@
         padding-left: 2.6rem;
         font-weight: 700;
         letter-spacing: 0.2em;
+        cursor: hand;
+        cursor: pointer;
     }
+
+    /*MENU*/
 
     &__menu {
         font-family: 'Ubuntu condensed', sans-serif;
@@ -43,6 +51,8 @@
         text-align: center;
     }
 
+    /*RRSS*/
+
     .iconify {
         padding-bottom: 0.12rem;
         width: 23px;
@@ -53,7 +63,6 @@
         font-family: 'Ubuntu condensed', sans-serif;
         font-weight: 400;
         font-size: 18px;
-        line-height: 16px;
         text-align: center;
         margin-top: 2rem;
     }
@@ -64,17 +73,14 @@
         margin: 1rem 3rem;
     }
 
+        /*medios de pago*/
+
     &__mediosDePago-titulo {
-        font-family: 'Ubuntu condensed', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        text-align: center;
-        margin-top: 2rem;
+        @extend .footer__rrss-titulo;
     }
 
     &__mediosDePago-iconos {
-        display: flex;
-        justify-content: space-evenly;
+        @extend .footer__rrss-iconos;
         margin: 1rem 0;
     }
 
@@ -176,8 +182,21 @@
             font-size: 15px;
         }
 
+        &__menu-items:hover {
+            font-size: 16px;
+        }
+
         &__ayuda {
             font-size: 15px;
+        }
+
+        &__ayuda:hover {
+            font-size: 16px;
+        }
+
+        .iconify:hover{
+            width: 24px;
+            height: 24px;
         }
 
         &__mediosDePago {

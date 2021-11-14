@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +23,22 @@
     <header>
         <!--menu-->
         <div class="header">
-            <nav class="header__menu">
+            <nav class="header__menu" data-aos="zoom-in">
                 <li class="header__menu-items"><a href="actividades.html">ACTIVIDADES</a></li>
                 <li class="header__menu-items"><a href="quever.html">QUE VER</a></li>
                 <li class="header__menu-items"><a href="informacion.html">INFORMACIÓN ÚTIL</a></li>
             </nav>
 
             <!--logo-->
-            <div class="header__logo">
+            <div class="header__logo" data-aos="zoom-in">
                 <a href="../index.html">
                     <h1 class="header__logo-titulo">tripkio </h1>
                     <span class="header__logo-subtitulo">ROMA</span>
                 </a>
             </div>
 
-            <!--iconos-->
-            <div class="header__iconos">
+            <!--iconos/navbar-->
+            <div class="header__iconos" data-aos="zoom-in">
                 <a class="header__iconos-items1" href="#"><span class="iconify"
                         data-icon="clarity:search-line"></span></a>
                 <a class="header__iconos-items2" href="#"><span class="iconify"
@@ -50,7 +51,10 @@
         </div>
 
         <!--imagen/header-->
-        <section class="bannerPaginas">
+        <section class="bannerPaginas"  data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
             <h2 class="bannerPaginas__titulo">QUE VER</h2>
         </section>
     </header>
@@ -58,13 +62,13 @@
         <!--atracciones-->
         <section>
             <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4 container__espacios">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/coliseo.jpg" class="container__card-imagen" alt="COLISEO ROMANO">
+                            <img src="../imagenes/coliseo.jpg" class="container__card-imagen" data-aos="zoom-in" alt="COLISEO ROMANO">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">COLISEO ROMANO</h5>
-                                <p class="container__card-texto-atracciones">El Coliseo de Roma, llamado en la
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">COLISEO ROMANO</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">El Coliseo de Roma, llamado en la
                                     antigüedad Anfiteatro Flavio, es el
                                     anfiteatro más grande construido durante el Imperio Romano y el monumento más
                                     impresionante de Roma. Cada año lo visitan 6 millones de personas.</p>
@@ -73,10 +77,10 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/foro romano.jpg" class="container__card-imagen" alt="FORO ROMANO">
+                            <img src="../imagenes/foro romano.jpg" class="container__card-imagen" data-aos="zoom-in" alt="FORO ROMANO">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">FORO ROMANO</h5>
-                                <p class="container__card-texto-atracciones">El Foro Romano representaba el centro
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">FORO ROMANO</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">El Foro Romano representaba el centro
                                     neurálgico de la antigua Roma. En
                                     el Foro se desarrollaba la vida pública, cultural y económica de la época
                                     republicana y
@@ -86,10 +90,10 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/plaza navona.jpg" class="container__card-imagen" alt="PLAZA NAVONA">
+                            <img src="../imagenes/plaza navona.jpg" class="container__card-imagen" data-aos="zoom-in" alt="PLAZA NAVONA">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">PLAZA NAVONA</h5>
-                                <p class="container__card-texto-atracciones">Dotada de un estilo barroco muy elegante,
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">PLAZA NAVONA</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">Dotada de un estilo barroco muy elegante,
                                     la Plaza Navona es una de las
                                     plazas más bonitas y populares de Roma.</p>
                             </div>
@@ -97,11 +101,11 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/fontana de trevi.jpg" class="container__card-imagen"
+                            <img src="../imagenes/fontana de trevi.jpg" class="container__card-imagen" data-aos="zoom-in"
                                 alt="FONTANA DI TREVI">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">FONTANA DI TREVI</h5>
-                                <p class="container__card-texto-atracciones">¿Te han dicho que debes lanzar una moneda a
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">FONTANA DI TREVI</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">¿Te han dicho que debes lanzar una moneda a
                                     la Fontana de Trevi y no
                                     sabes por qué? Conoce la historia y el mito de la fuente más bonita de Roma y de
                                     todo el
@@ -111,11 +115,11 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/plaza san pedro.jpg" class="container__card-imagen"
+                            <img src="../imagenes/plaza san pedro.jpg" class="container__card-imagen" data-aos="zoom-in"
                                 alt="PLAZA DE SAN PEDRO">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">PLAZA DE SAN PEDRO</h5>
-                                <p class="container__card-texto-atracciones">La Plaza de San Pedro es tal vez la plaza
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">PLAZA DE SAN PEDRO</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">La Plaza de San Pedro es tal vez la plaza
                                     más conocida del mundo y una
                                     de las más bonitas. Fue construida por Bernini a mediados del siglo XVII y puede
                                     acoger
@@ -125,11 +129,11 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/basilica de san pedro.jpg" class="container__card-imagen"
+                            <img src="../imagenes/basilica de san pedro.jpg" class="container__card-imagen" data-aos="zoom-in"
                                 alt="BASÍLICA DE SAN PEDRO">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">BASÍLICA DE SAN PEDRO</h5>
-                                <p class="container__card-texto-atracciones">La Basílica de San Pedro es el edificio
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">BASÍLICA DE SAN PEDRO</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">La Basílica de San Pedro es el edificio
                                     religioso más importante del
                                     catolicismo. En ella, el Papa celebra las liturgias más importantes y su interior
                                     acoge
@@ -139,11 +143,11 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/capilla sixtina.jpg" class="container__card-imagen"
+                            <img src="../imagenes/capilla sixtina.jpg" class="container__card-imagen" data-aos="zoom-in"
                                 alt="CAPILLA SIXTINA">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">CAPILLA SIXTINA</h5>
-                                <p class="container__card-texto-atracciones">Considerada como la obra maestra de Miguel
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">CAPILLA SIXTINA</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">Considerada como la obra maestra de Miguel
                                     Ángel, la Capilla Sixtina es
                                     uno de esos lugares que todo el mundo debería ver al menos una vez en la vida.</p>
                             </div>
@@ -151,11 +155,11 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/plaza españa.jpg" class="container__card-imagen"
+                            <img src="../imagenes/plaza españa.jpg" class="container__card-imagen" data-aos="zoom-in"
                                 alt="PLAZA DE ESPAÑA">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">PLAZA DE ESPAÑA</h5>
-                                <p class="container__card-texto-atracciones">La Plaza de España es uno de los lugares
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">PLAZA DE ESPAÑA</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">La Plaza de España es uno de los lugares
                                     más concurridos de Roma. Su
                                     monumental escalinata es lugar de encuentro de romanos y turistas y ha sido
                                     escenario de
@@ -165,11 +169,11 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="../imagenes/panteon de agripa.jpg" class="container__card-imagen"
+                            <img src="../imagenes/panteon de agripa.jpg" class="container__card-imagen" data-aos="zoom-in"
                                 alt="PANTEÓN DE AGRIPA">
                             <div class="card-body">
-                                <h5 class="container__card-titulo-atracciones">PANTEÓN DE AGRIPA</h5>
-                                <p class="container__card-texto-atracciones">El Panteón de Roma es la obra
+                                <h5 class="container__card-titulo-atracciones" data-aos="fade-right">PANTEÓN DE AGRIPA</h5>
+                                <p class="container__card-texto-atracciones" data-aos="fade-down">El Panteón de Roma es la obra
                                     arquitectónica mejor conservada de la
                                     antigua Roma y una de las obras maestras de la arquitectura de la capital italiana.
                                 </p>
@@ -180,12 +184,13 @@
             </div>
         </section>
     </main>
+
     <!--footer-->
     <footer>
         <div class="footer">
 
             <!--logo-->
-            <div class="footer__logo">
+            <div class="footer__logo" data-aos="zoom-in">
                 <a href="../index.html">
                     <p class="footer__logo-titulo">tripkio</p>
                     <span class="footer__logo-subtitulo">ROMA</span>
@@ -193,7 +198,10 @@
             </div>
 
             <!--menu-->
-            <div class="footer__nav">
+            <div class="footer__nav" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
                 <nav class="footer__menu">
                     <li class="footer__menu-items"><a href="actividades.html">ACTIVIDADES</a></li>
                     <li class="footer__menu-items"><a href="quever.html">QUE VER</a></li>
@@ -207,7 +215,7 @@
             </div>
 
             <!--seguinos-->
-            <div class="footer__rrss">
+            <div class="footer__rrss" data-aos="zoom-in">
                 <h4 class="footer__rrss-titulo">SEGUINOS</h4>
                 <div class="footer__rrss-iconos">
                     <a href="#"><span class="iconify" data-icon="simple-icons:facebook"></span></a>
@@ -218,7 +226,7 @@
             </div>
 
             <!--medios de pago-->
-            <div class="footer__mediosDePago">
+            <div class="footer__mediosDePago" data-aos="zoom-in">
                 <h4 class="footer__mediosDePago-titulo">MEDIOS DE PAGO</h4>
                 <div class="footer__mediosDePago-iconos">
                     <img class="footer__mediosDePago-vector" src="../imagenes/mercadopago.svg" alt="rapipago">
@@ -231,10 +239,16 @@
                 </div>
             </div>
 
-            <p class="footer__copyright">Copyright © 2021 Tripkio. Todos los derechos reservados</p>
+            <p class="footer__copyright" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">Copyright © 2021 Tripkio. Todos los derechos reservados</p>
         </div>
     </footer>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
 </body>
 
