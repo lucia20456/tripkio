@@ -3,10 +3,10 @@
 /*INFORMACION - texto, titulo y subtitulo*/
 
 .secciones {
-    margin: 2rem 3rem;
+    margin: 2rem 1rem;
 
     &__titulo {
-        font-size: 45px;
+        font-size: 30px;
         text-align: center;
         font-weight: 700;
         margin: 5rem 0 3rem 0;
@@ -14,30 +14,30 @@
 
     &__temporada{
         text-align: center;
-        font-size: 26px;
+        font-size: 20px;
         font-weight: 600;
     }
 
     &__meses{
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     &__subtitulo {
-        font-size: 26px;
+        font-size: 20px;
         text-align: left;
         font-weight: 600;
     }
 
     &__descripcion {
-        font-size: 18px;
+        font-size: 16px;
         text-align: left;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     &__temperaturas {
-        font-size: 20px;
+        font-size: 17px;
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -47,25 +47,84 @@
     &__parrafo {
         margin-bottom: 2rem;
         flex-shrink: 1;
+        font-size: 16px;
     }
 
     &__imagenes{
         width: 200px;
         height: 200px;
         object-fit: cover;
+        margin-bottom: 2rem;
     }
 
-    &__textoImagen{
-        display: flex;
+    &__galeria {
+        text-align:center;
     }
 
-    &__texto{
-        flex-direction: column;
-    }
+    @include tablet{
+        margin: 2rem 3rem;
 
-    &__galeria{
-        flex-direction: column;
-        margin-left: 5rem;
+        &__titulo {
+            font-size: 45px;
+            text-align: center;
+            font-weight: 700;
+            margin: 5rem 0 3rem 0;
+        }
+    
+        &__temporada{
+            font-size: 26px;
+        }
+    
+        &__meses{
+            font-size: 18px;
+        }
+    
+        &__subtitulo {
+            text-align: left;
+        }
+    
+        &__descripcion {
+            text-align: left;
+        }
+
+        &__temperaturas {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-weight: 700;
+        }
+    
+        &__parrafo {
+            margin-bottom: 2rem;
+            flex-shrink: 1;
+        }
+    
+        &__imagenes{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 0 0 5rem 0;
+        }
+    
+        &__textoImagen{
+            display: flex;
+        }
+    
+        &__texto{
+            flex-direction: column;
+        }
+    
+        &__galeria{
+            flex-direction: column;
+            margin-left: 5rem;
+        }
+
+        @include desktop {
+            &__imagenes{
+               margin: 0;
+            }
+        }
     }
 }
 
