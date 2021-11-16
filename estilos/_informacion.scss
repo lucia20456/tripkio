@@ -5,43 +5,37 @@
 .secciones {
     margin: 2rem 1rem;
 
+    @mixin estilos($font-size, $text-align, $font-weight){
+        font-size: $font-size;
+        text-align:$text-align;
+        font-weight:$font-weight;
+    }
+
     &__titulo {
-        font-size: 30px;
-        text-align: center;
-        font-weight: 700;
+        @include estilos(30px, center, 700);
         margin: 5rem 0 3rem 0;
     }
 
     &__temporada{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 600;
+        @include estilos(20px, center, 600);
     }
 
     &__meses{
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
+        @include estilos(16px, center, 500);
     }
 
     &__subtitulo {
-        font-size: 20px;
-        text-align: left;
-        font-weight: 600;
+        @include estilos(20px, left, 600);
     }
 
     &__descripcion {
-        font-size: 16px;
-        text-align: left;
-        font-weight: 600;
+        @include estilos(16px, left, 600);
     }
 
     &__temperaturas {
-        font-size: 17px;
+        @include estilos(17px, center, 700);
         display: flex;
         justify-content: space-around;
-        text-align: center;
-        font-weight: 700;
     }
 
     &__parrafo {
@@ -66,9 +60,6 @@
 
         &__titulo {
             font-size: 45px;
-            text-align: center;
-            font-weight: 700;
-            margin: 5rem 0 3rem 0;
         }
     
         &__temporada{
@@ -78,32 +69,12 @@
         &__meses{
             font-size: 18px;
         }
-    
-        &__subtitulo {
-            text-align: left;
-        }
-    
-        &__descripcion {
-            text-align: left;
-        }
 
         &__temperaturas {
             font-size: 20px;
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            font-weight: 700;
-        }
-    
-        &__parrafo {
-            margin-bottom: 2rem;
-            flex-shrink: 1;
         }
     
         &__imagenes{
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
             margin: 0 0 5rem 0;
         }
     

@@ -627,14 +627,14 @@ body {
 }
 
 .secciones__temporada {
-  text-align: center;
   font-size: 20px;
+  text-align: center;
   font-weight: 600;
 }
 
 .secciones__meses {
-  text-align: center;
   font-size: 16px;
+  text-align: center;
   font-weight: 500;
 }
 
@@ -652,13 +652,13 @@ body {
 
 .secciones__temperaturas {
   font-size: 17px;
+  text-align: center;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: center;
-  font-weight: 700;
 }
 
 .secciones__parrafo {
@@ -686,9 +686,6 @@ body {
   }
   .secciones__titulo {
     font-size: 45px;
-    text-align: center;
-    font-weight: 700;
-    margin: 5rem 0 3rem 0;
   }
   .secciones__temporada {
     font-size: 26px;
@@ -696,32 +693,10 @@ body {
   .secciones__meses {
     font-size: 18px;
   }
-  .secciones__subtitulo {
-    text-align: left;
-  }
-  .secciones__descripcion {
-    text-align: left;
-  }
   .secciones__temperaturas {
     font-size: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    text-align: center;
-    font-weight: 700;
-  }
-  .secciones__parrafo {
-    margin-bottom: 2rem;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
   }
   .secciones__imagenes {
-    width: 200px;
-    height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
     margin: 0 0 5rem 0;
   }
   .secciones__textoImagen {
